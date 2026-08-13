@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main()
+{
+setlocale(LC_ALL,"Portuguese");
+	int numero;
+	printf("Digite um numero qualquer: \n");
+	scanf("%d", &numero);
+	if (numero<0)
+	printf("Numero menor que zero");
+}
