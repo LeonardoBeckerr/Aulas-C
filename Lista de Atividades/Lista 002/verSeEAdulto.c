@@ -16,7 +16,7 @@ setlocale(LC_ALL,"Portuguese");
 		printf("Você é jovem");
 	else if (numero >= 25 && numero <= 59)
 		printf("Você é adulto");
-	else if (numero >= 60 && numero <= 166)
+	else if (numero >= 60)
 		printf("Você é idoso");	
 	else 
 		printf("Numero Invalido");

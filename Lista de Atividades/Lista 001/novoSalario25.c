@@ -9,6 +9,7 @@ int main()
    scanf("%f%*c", &salario);
    salarionovo = salario * 1.25;
    valoraumentado = salario * 0.25;
+   printf("Salario Atual: %.2f\n", salario);
    printf("Salario Novo: %.2f\n", salarionovo);
    printf("Valor Aumentado: %.2f\n", valoraumentado);
    system("pause");

@@ -10,7 +10,7 @@ int main()
    scanf("%f%*c", &salario);
    valorgratificacao = salario * 0.05;
    valorimposto = salario * 0.07;
-   novosalario = salario * 0.88;
+   novosalario = salario + valorgratificacao - valorimposto;
    printf("Salario a receber : %.2f\n", novosalario);
    printf("Valor Gratificação: %.2f\n", valorgratificacao);
    printf("Valor Imposto: %.2f\n", valorimposto);

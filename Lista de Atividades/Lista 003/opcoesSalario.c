@@ -20,40 +20,37 @@ float salario;
 	case 1: 
 	 	printf("Informe seu salario: ");
    		scanf("%f%*c", &salario);
-   		if( salario >= 1 && salario < 500)
+   		if(salario < 500)
    			printf("O valor do seu imposto é: R$%.2f", salario * 0.05 );
    		else if(salario >= 500 && salario <= 850)
    			printf("O valor do seu imposto é: R$%.2f", salario * 0.10 );
-   		else if (salario >= 850) 
+   		else 
    			printf("O valor do seu imposto é: R$%.2f", salario * 0.15 );
-   		else
-   			printf("Salario menor ou igual 0");
+   		
 	break;
 	
 	case 2: 
 	 	printf("Informe seu salario: ");
    		scanf("%f%*c", &salario);
-   		if( salario >= 1 && salario < 450)
+   		if(salario < 450)
    			printf("Seu novo salario é: R$%.2f", salario + 100 );
    		else if(salario >= 450 && salario <= 749)
    			printf("Seu novo salario é: R$%.2f", salario + 75 );
    		else if(salario >= 750 && salario <= 1500)
    			printf("Seu novo salario é: R$%.2f", salario + 50 );
-   		else if(salario > 1500)
-   			printf("Seu novo salario é: R$%.2f", salario + 25 );
    		else
-   			printf("Salario menor ou igual 0");
+   			printf("Seu novo salario é: R$%.2f", salario + 25 );
+   		
 	break;	
 	
 	case 3: 
 	 	printf("Informe seu salario: ");
    		scanf("%f%*c", &salario);
-   		if( salario >= 1 && salario <= 700)
+   		if(salario <= 700)
    			printf("Mal remunerado");
-   		else if(salario > 700)
-   			printf("Bem remunerado");
    		else
-   			printf("Salario menor ou igual 0");
+   			printf("Bem remunerado");
+   		
 	break;
 	
 	default: 

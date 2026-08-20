@@ -5,25 +5,18 @@
 int main()
 {
     setlocale(LC_ALL, "Portuguese");
-    int i, anosAver, ano;
+    int ano, anoAtual;
     float salario, aumento,percentual; 
     
     salario = 1000.0;
     percentual = 0.015;
-    ano = 2018;
-        
-    printf("Digite quantos anos de aumento salarial deseja ver (Desde 2018): ");
-    scanf("%d", &anosAver); 
-    printf("\n");
-        
-    for (i = 1; i <= anosAver + 1; i++) {
+    anoAtual = 2026;
+    for (ano = 2019; ano <= anoAtual; ano++) {
     	aumento = salario * percentual;
     	salario = salario + aumento;
-        printf("Ano atual: %d | ", ano + 1);
+        printf("Ano atual: %d | ", ano);
         printf("Salario atual: %.2f\n", salario); 
         printf("-----------------------------------\n");
-        
-        ano = ano + 1;
         percentual = percentual * 2; 
     }
     

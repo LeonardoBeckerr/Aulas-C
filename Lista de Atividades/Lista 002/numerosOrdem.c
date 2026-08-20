@@ -8,7 +8,7 @@ setlocale(LC_ALL,"Portuguese");
 	int a,b;
 	printf("Digite 2 numeros: ");
 	scanf("%d	%d", &a,&b);
-	if (a >= b){
+	if (a <= b){
 	
 		printf("%d" , a);
 		printf(" e %d" , b);

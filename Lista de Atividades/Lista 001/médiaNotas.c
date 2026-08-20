@@ -5,8 +5,8 @@
 int main()
 {
 setlocale(LC_ALL,"Portuguese");
-	int a,b,c;
+	float a,b,c;
 	printf("Digite 3 notas para ver sua média: ");
-	scanf("%d %d %d", &a,&b,&c);
-	printf("Média das notas: %d\n", (a + b + c)/3);
+	scanf("%f %f %f", &a,&b,&c);
+	printf("Media das notas: %.2f\n", (a + b + c)/3);
 }
