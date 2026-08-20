@@ -17,7 +17,8 @@ int main() {
         return 0;
     }
 
-    for (i = 1; i <= total_criancas; i++) {
+    i = 1;
+    while (i <= total_criancas) {
         printf("\n--- Criança %d de %d ---\n", i, total_criancas);
 
         printf("Digite o sexo da criança (M/F): ");
@@ -35,6 +36,8 @@ int main() {
         if (tempo_vida <= 24) {
             mortas_24++;
         }
+
+        i++;
     }
 
     float perc_f = ((float)mortas_f / total_criancas) * 100;
