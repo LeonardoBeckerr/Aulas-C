@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <locale.h>
-#include "exercicio3.h"
+#include "Exe03_LeonardoBecker.h"
 
 int main() {
     setlocale(LC_ALL, "Portuguese");
